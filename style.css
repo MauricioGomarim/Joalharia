@@ -69,6 +69,7 @@ ul {
     background-color: var(--secondary-color-background);
     display: flex;
     align-items: center;
+    justify-content: space-around;
     padding-left: 2rem;
 }
 
@@ -375,22 +376,29 @@ footer {
     width: 100%;
     height: 100%;
 
-    background-color: var(--color-black)
- 
+    background-color: var(--color-black);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .infos {
     display: flex;
     flex-wrap: wrap;
-
     padding: 1rem;
     justify-content: center;
     gap: 1rem;
 
     font-family: var(--font-poppins);
+
+    padding-top: 2rem;
+
+    
 }
 .card {
 
-    width: 14em;
+    width: 14rem;
     height: 100%;
     margin-bottom: 2rem;
 }
@@ -398,9 +406,10 @@ footer {
 .card h1 {
     color: white;
     font-weight: 400;
+    font-size: 1.2rem;
 }
 .card ul li, p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 1rem;
     color: var(--color-font-gray)
 }
@@ -420,9 +429,46 @@ footer {
     color: var(--color-font-gray);
 }
 
-/* DESKTOP */
 
+.footer {
+    width: 60%;
+    height: 4rem;
+    border-top: 1px solid rgba(48, 48, 48);
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.img img {
+    width: 40rem;
+    max-width: 700px;
+    top:20px;
+    left: 0;
+}
+
+.img {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
 
 .icons-hidden {
     display: none;
+}
+
+
+/* DESKTOP */
+
+@media (max-width: 940px){
+
+   
+    .img{
+        display: none;
+    }
 }
