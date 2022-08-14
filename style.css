@@ -124,11 +124,24 @@ ul {
     background-color: black;
 
     margin-top: 3rem;
+    position: relative;
+
+    cursor: pointer;
     
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.button-show-now:hover {
+    background-color: rgb(56, 56, 56);
+}
+
+.button-show-now img {
+    position: absolute;
+
+    top: 8px;
+    right: 13px;
+
+
 }
 
 .button-show-now p {
