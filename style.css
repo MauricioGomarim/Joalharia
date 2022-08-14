@@ -20,6 +20,8 @@
     --secondary-color-background: rgba(255, 210, 210);
     --color-gold: rgba(231, 228, 206);
     --color-hover: rgba(200, 198, 188);
+    --color-black: rgba(23, 23, 23);
+    --color-font-gray: rgba(94, 94, 94);
     
 }
 body {
@@ -371,36 +373,51 @@ ul {
 
 footer {
     width: 100%;
-    height: 40rem;
+    height: 100%;
 
+    background-color: var(--color-black)
  
 }
 .infos {
     display: flex;
     flex-wrap: wrap;
 
-    padding: 2rem;
+    padding: 1rem;
     justify-content: center;
+    gap: 1rem;
+
+    font-family: var(--font-poppins);
 }
 .card {
 
-    width: 13rem;
+    width: 14em;
     height: 100%;
     margin-bottom: 2rem;
 }
 
-.card ul , p{
-    font-size: 1.5rem;
-    
+.card h1 {
+    color: white;
+    font-weight: 400;
 }
-
-.card ul li {
+.card ul li, p {
+    font-size: 1.2rem;
     margin-top: 1rem;
+    color: var(--color-font-gray)
 }
 
 .card ul img {
     width: 1rem;
     margin-right: 4px;
+}
+
+.card img {
+    margin-top: 4px;
+    width: 15rem;
+}
+
+.card ul li a {
+    text-decoration: none;
+    color: var(--color-font-gray);
 }
 
 /* DESKTOP */
