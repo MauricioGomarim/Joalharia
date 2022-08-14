@@ -144,7 +144,7 @@ ul {
 
 .sec-product{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
 
@@ -310,6 +310,22 @@ ul {
     filter: invert(1);
 }
 
+
+
+.sec-banner {
+    width: 100%;
+    height: 40rem;
+
+    background-color: black;
+    color: white;
+}
+
+.sec-banner h1 {
+    font-family: var(--font-lovelyn);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: clamp(2.5rem, 1rem + 8vw, 10rem );
+}
 
 /* DESKTOP */
 
