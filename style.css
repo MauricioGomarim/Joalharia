@@ -203,7 +203,7 @@ ul {
     color: rgb(0, 0, 0);
 }
 
-.box span {
+.box .prices, span {
     text-decoration: line-through
 }
 .products .item {
@@ -314,10 +314,10 @@ ul {
 
 .sec-banner {
     width: 100%;
-    height: 40rem;
+    height: 100%;
 
     background-color: black;
-    color: white;
+    color:  var(--primary-color-background);
 
     padding: 2rem;
     display: flex;
@@ -346,11 +346,13 @@ ul {
 
 .prices {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: bold;
     font-family: var(--font-poppins);
     width:  20rem;
 
     text-align: center;
+
+    
 }
 
 .button {
@@ -361,7 +363,44 @@ ul {
     width: 100%;
     height: 3rem;
 
+    text-transform: uppercase;
+    font-size: 1.5rem;
     
+}
+
+
+footer {
+    width: 100%;
+    height: 40rem;
+
+ 
+}
+.infos {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 2rem;
+    justify-content: center;
+}
+.card {
+
+    width: 13rem;
+    height: 100%;
+    margin-bottom: 2rem;
+}
+
+.card ul , p{
+    font-size: 1.5rem;
+    
+}
+
+.card ul li {
+    margin-top: 1rem;
+}
+
+.card ul img {
+    width: 1rem;
+    margin-right: 4px;
 }
 
 /* DESKTOP */
