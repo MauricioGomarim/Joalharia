@@ -601,6 +601,8 @@ footer {
     .desktop {
         display: flex;
         gap: 4rem;
+
+        align-items: center;
     }
 
     .icons-desk {
