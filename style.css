@@ -61,6 +61,8 @@ ul {
 .icons-header img {
     width: 30px;
     cursor: pointer;
+
+    position: fixed;
 }
 
 .icons-header {
@@ -74,7 +76,7 @@ ul {
 
 
 
-.btn-hamburuger {
+.btn-hamburguer {
     cursor: pointer;
 }
 
@@ -508,7 +510,7 @@ footer {
     right: 0px;
     bottom:40px;
     position: absolute;
-    z-index: 4;
+    z-index: 11;
 
     background: none;
     border: none;
@@ -518,13 +520,15 @@ footer {
     position: relative;
 }
 .icons {
-    position: absolute;
+    position: fixed;
+    z-index: 10;
     right: -20px;
-    top: -35px;
+    top: 35px;
 
     width: 200px;
     height: 200px;
     background-color: rgb(236, 236, 236);
+    border-radius: 8px;
     opacity: 1;
 
     transition: all 0.3s ease-in-out;
@@ -542,11 +546,15 @@ footer {
     gap: 1rem;
 
     margin-bottom: 2rem;
+
+    cursor: pointer;
 }
 
 .icons #icon h1 {
     font-size: 2rem;
-    font-family: var(--font-lovelyn)
+    font-family: var(--font-lovelyn);
+
+    margin-left: 3rem;
 }
 
 
